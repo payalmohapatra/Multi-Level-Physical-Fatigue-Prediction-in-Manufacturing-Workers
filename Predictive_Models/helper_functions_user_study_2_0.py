@@ -10,14 +10,6 @@ import numpy as np
 import math
 import seaborn as sns
 
-## Pytorch related
-import torch
-from torch._C import dtype
-import torch.nn as nn
-import torchvision
-import torchvision.transforms as transforms
-from torch.utils.data import Dataset, DataLoader
-from torch.utils.tensorboard import SummaryWriter
 
 ## Scikit related
 import sklearn
@@ -30,12 +22,9 @@ from sklearn.feature_selection import SelectKBest, chi2, f_regression
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import SGDClassifier
 from sklearn import datasets
-from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from scipy import signal
 from scipy import integrate
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import plot_confusion_matrix
 from sklearn.svm import SVC
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA, KernelPCA
@@ -45,15 +34,9 @@ from scipy.stats import norm, kurtosis
 from sklearn.manifold import TSNE
 from sklearn.model_selection import GridSearchCV
 from sklearn.svm import SVR
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import ConfusionMatrixDisplay
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
-from sklearn.metrics import classification_report, confusion_matrix
 
-# tensorflow related
-import tensorflow as tf
-from tensorflow.keras import layers, losses
-from tensorflow.keras.models import Model
+
 
 
 ########################### File Parser script ########################################

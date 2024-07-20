@@ -1,11 +1,23 @@
 # Multi-Level-Physical-Fatigue-Prediction-in-Manufacturing-Workers
 
 ![System_Diagram_4](System_Diagram.png)
+
+## Setting Up the Environment
+
+1. Clone the Repository :
+   ```bash
+   git clone https://github.com/payalmohapatra/WorkerFatigue.git
+   cd WorkerFatigue
+2. Create the Conda Environment:
+Use the provided environment.yml file to create the Conda environment.
+
+    ```bash
+    conda env create -f environment.yml
+    conda activate worker_fatigue
 ## Training
-The models are trained using XGBoost Regressor under three main settings :
-1. Task specific training using all features from sensor fusion of 6 wearable sensors resulting in 48 features. Models are saved with prefix composite_* and ziptie_* for this setting.
-2. Task independent training using all tasks and only features using biophysical signals. Models are saved with prefix combined_* this setting.
-3. Task independent training using all tasks and all features. Models are saved with prefix combined_vitals_* for this setting.
+The models are trained using XGBoost Regressor under the following main settings :
+1. Task specific training using all features from sensor fusion of 6 wearable sensors. Models are saved with prefix composite_* and ziptie_* for this setting.
+2. Task independent training using all tasks and all features. Models are saved with prefix combined_vitals_* for this setting.
 
 All the models are trained using two types of loss functions - asymmetric and Linex loss. Refer to ./Predictive_Models/Data_Analysis_Regression_fixed_Train_Test.ipynb for illustrations of the loss functions. The models are saved with suffixes of *_assym and *_linex respectively.
 
