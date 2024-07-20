@@ -1,4 +1,4 @@
-# Multi-Level-Physical-Fatigue-Prediction-in-Manufacturing-Workers
+# Wearable Network for Multi-Level Physical Fatigue Prediction in Manufacturing Workers
 
 ![System_Diagram_4](System_Diagram.png)
 ## Training
