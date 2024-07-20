@@ -30,7 +30,7 @@ For training, only sample data from a couple of participants are provided here. 
 
 The complete dataset can be downloaded by running the scripts here - MxD_Final_CodeBase/Data_Download_Scripts
 
-Alternately, if you are only interested in the processed feature set, you unzip the file ./Predictive_Models/MxD_Data_User_Study.rar
+Alternately, if you are only interested in the processed feature set you can unzip the file ./Predictive_Models/MxD_Data_User_Study.rar
 
 ## Helper Functions
 
