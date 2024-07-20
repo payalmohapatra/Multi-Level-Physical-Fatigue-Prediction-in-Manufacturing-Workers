@@ -21,7 +21,11 @@ The models are trained using XGBoost Regressor under the following main settings
 
 All the models are trained using two types of loss functions - asymmetric and Linex loss. Refer to ./Predictive_Models/Data_Analysis_Regression_fixed_Train_Test.ipynb for illustrations of the loss functions. The models are saved with suffixes of *_assym and *_linex respectively.
 
-### Sample Data
+The following is an illustration comparing self-reported fatigue (blue markers) after each repetition with interpolated ground-truth fatigue (blue line) used as the target for the predictive model. Predicted fatigue (green line)  using (a) an \textbf{asymmetric linear-exponential (LINEX) objective} with mean-absolute error (MAE) of 2.01, emphasizing operator-centric design by penalizing underpredictions (underprediction rate, UR = 0.18), and (b) a \textbf{symmetric mean-squared-error} minimization objective resulting in MAE of 2.82 and UR of 0.46. 
+
+![compare_plot](comparison_fatigue_subplot.png)
+
+### Data
 Sample training data are present with suffix *_train and test data with fixed subjects left out of training with suffix *_test. These can be used to reproduce the results reported in the final report. 
 For training, only sample data from a couple of participants are provided here. A fully trained model and a complete testset are provided to allow users to analyze the results. The statistics of training and test data are as follows :
 
@@ -37,8 +41,5 @@ Alternately, if you are only interested in the processed feature set you can unz
 The data preparation, segmentation, standardization are done here - ./Predictive_Models/helper_functions_user_study_2_0.py 
 
 This is the central script repo for all helper functions used throughout the codebase. Please refer to this from the main script (./Predictive_Models/Data_Analysis_Regression_fixed_Train_Test.ipynb) for easy understanding.
-
-## Model Checkpoints
-All model checkpoints are stored here for quick analysis and inference - ./Predictive_Models/model_checkpoints
 
 These models are trained on data collected at Northwestern University till 1 December 2022. 
