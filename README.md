@@ -1,6 +1,6 @@
 # Multi-Level-Physical-Fatigue-Prediction-in-Manufacturing-Workers
 
-![System_Diagram_4](https://github.com/payalmohapatra/WorkerFatigue/blob/main/System_diagram_PNAS_Final.png)
+![System_Diagram_4](System_Diagram.png)
 ## Training
 The models are trained using XGBoost Regressor under three main settings :
 1. Task specific training using all features from sensor fusion of 6 wearable sensors resulting in 48 features. Models are saved with prefix composite_* and ziptie_* for this setting.
